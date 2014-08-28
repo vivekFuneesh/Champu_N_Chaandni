@@ -24,6 +24,6 @@ Champu_N_Chaandni
 
 A MultiPlayer Portable Computer Worm Game.
 
-A maximum of 2 Plaayers can play on same Keyboard.
+A maximum of 2 Players can play on same Keyboard.
 
 6 different Levels, 2 types of Chaandni's Pos.
