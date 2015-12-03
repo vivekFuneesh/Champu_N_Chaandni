@@ -208,7 +208,7 @@ public class Main extends JPanel implements Runnable
         {
         if(count==1){flag[1]=1;
         turn=0;}
-        while(true){if((flag[0]!=1)||(turn!=0))break;}
+        while(true){if((flag[0]!=1)||(turn!=0))break;else System.out.print("");}
            //Thread t=Thread.currentThread();
         if(key1!=null)removeKeyListener(key1);
         
@@ -485,7 +485,7 @@ public class Main extends JPanel implements Runnable
     }
     
     void run_advnc_calc(){flag[0]=1;turn=1;
-    while(true){if((flag[1]!=1)||(turn!=1))break;}
+    while(true){if((flag[1]!=1)||(turn!=1))break;else System.out.print("");}
             
    // System.out.println(b[0][0]+" "+b[0][1]+" ");
     
@@ -694,7 +694,7 @@ public class Main extends JPanel implements Runnable
         if(GUI.Classic.isSelected()){
         flag[1]=1;
         turn=0;
-        while(true){if((flag[0]!=1)||(turn!=0))break;}
+        while(true){if((flag[0]!=1)||(turn!=0))break;else System.out.print("");}
            
    
        if(key2!=null)removeKeyListener(key2);
@@ -928,7 +928,7 @@ public class Main extends JPanel implements Runnable
     }
 
     void run_basic_calc(){
-    flag[0]=1;turn=1;while(true){if((flag[1]!=1)||(turn!=1))break;}
+    flag[0]=1;turn=1;while(true){if((flag[1]!=1)||(turn!=1))break;else System.out.print("");}
             
            if(player_1OUT!=1){move_to_same_path_basic();move_rest_basic();}
                
