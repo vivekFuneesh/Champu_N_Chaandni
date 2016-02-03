@@ -29,8 +29,12 @@ A maximum of 2 Players can play on same Keyboard.
 6 different Levels, 2 types of Chaandni's Pos.
 
 Download source code.
+
 Extract it and move inside directory on cmd.
-Now Type::
+
+Now Type::<br>
+
 javac *.java
+
 java MainFrame
 
