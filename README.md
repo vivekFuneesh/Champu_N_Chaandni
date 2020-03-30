@@ -1,9 +1,9 @@
 
 Champu_N_Chaandni is a PC Game in which  worms size increase on eating food. 
 
-    Copyright (C) 2014  Vivek Mangla
+    Copyright (C) 2014  Vivek Mangla GNU/GPLV3
 
- Champu_N_Chaandni is free Game: you can redistribute it and/or modify
+    Champu_N_Chaandni is free Game: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
