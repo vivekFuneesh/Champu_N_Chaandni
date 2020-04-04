@@ -26,9 +26,11 @@ A MultiPlayer Portable Computer Worm Game.
 
 A maximum of 2 Players can play on same Keyboard.
 
-6 different Levels, 2 types of Chaandni's Pos.
+6 different Levels, 2 types of Chaandni's Poses.
 
-Download source code.
+Download executables(1 click play) in formats of .exe, .dmg, .sh from sourceforge.net/u/vivekfuneesh
+
+Download source code from here.
 
 Extract it and move inside directory on cmd.
 
