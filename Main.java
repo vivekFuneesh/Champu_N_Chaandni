@@ -64,6 +64,7 @@ public class Main extends JPanel implements Runnable
   //--------------------------------------------------------------------  
     
    void snake_nature(){
+   snake_taste=0;
   try{m="y";
       m=JOptionPane.showInputDialog("Can Snake Bite itself::\n Enter Y for yes and n otherwise",m);
      }catch(Exception e){}
