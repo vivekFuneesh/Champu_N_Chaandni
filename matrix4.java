@@ -1,4 +1,6 @@
 
+
+
 /**********************
   *************************
         @author::Vivek Mangla
@@ -7,7 +9,7 @@
 
 /*******************************************************************
 
-matrix4.java is part of Champu_N_Chaandni.
+Matrix4.java is part of Champu_N_Chaandni.
 
     Champu_N_Chaandni is free Game: you can redistribute it    and/or modify
     it under the terms of the GNU General Public License as published     by
@@ -35,7 +37,7 @@ import java.awt.geom.Rectangle2D;
  * @author vivek
  */
 
-public class matrix4 {
+public class Matrix4 {
     
     static int VSL_breadth,VSL_height,block_width,block_height;
  

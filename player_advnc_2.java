@@ -1,4 +1,6 @@
 
+
+
 /**********************
   *************************
         @author::Vivek Mangla
@@ -7,7 +9,7 @@
 
 /*******************************************************************
 
-player_advnc_2.java is part of Champu_N_Chaandni.
+Player_Advnc_2.java is part of Champu_N_Chaandni.
 
     Champu_N_Chaandni is free Game: you can redistribute it    and/or modify
     it under the terms of the GNU General Public License as published     by
@@ -33,7 +35,7 @@ import java.awt.geom.Ellipse2D;
 
 
 
-class player_advnc_2{
+class Player_Advnc_2{
 static double[][] const_arr_player_2;
  
  static double[][] const_arr1_player_2,arr1;
@@ -101,23 +103,23 @@ const_arr_player_2=null;
         if((b[0][0]>=pWidth-10)&&(check_up_2()==1)){
           
                  const_arr_player_2[0][0]=0;const_arr_player_2[0][2]=-1;
-                 arr[0][1]=b[0][1];b[0][0]=0;arr[0][0]=-1;player_advnc_2.move_rest_2();
+                 arr[0][1]=b[0][1];b[0][0]=0;arr[0][0]=-1;Player_Advnc_2.move_rest_2();
                   
              }    
        else if((b[0][0]<=0)&&(check_up_2()==2)){
            
                  const_arr_player_2[0][0]=pWidth-5;const_arr_player_2[0][2]=pWidth-2;
-                 arr[0][0]=pWidth-2;arr[0][1]=b[0][1];b[0][0]=pWidth-5;player_advnc_2.move_rest_2();
+                 arr[0][0]=pWidth-2;arr[0][1]=b[0][1];b[0][0]=pWidth-5;Player_Advnc_2.move_rest_2();
            
              }    
        else if((b[0][1]>=pHeight-10)&&(check_left_2()==2)){
                  arr[0][0]=b[0][0];arr[0][1]=-1;b[0][1]=0;
-                 const_arr_player_2[0][1]=0;const_arr_player_2[0][3]=-1;player_advnc_2.move_rest_2();
+                 const_arr_player_2[0][1]=0;const_arr_player_2[0][3]=-1;Player_Advnc_2.move_rest_2();
             
              }    
        else if((b[0][1]<=0)&&(check_left_2()==1)){
              arr[0][0]=b[0][0];arr[0][1]=pHeight-2;b[0][1]=pHeight-5;
-           const_arr_player_2[0][1]=pHeight-5;const_arr_player_2[0][3]=pHeight-2;player_advnc_2.move_rest_2();
+           const_arr_player_2[0][1]=pHeight-5;const_arr_player_2[0][3]=pHeight-2;Player_Advnc_2.move_rest_2();
          
              }    
     }
@@ -224,7 +226,7 @@ const_arr_player_2=null;
     }
     
   static int show_mouth_player_2(){
-     dist_player_2=Math.sqrt((b[0][0]-5-food_generate.x)*(b[0][0]-5-food_generate.x)+(b[0][1]-5-food_generate.y)*(b[0][1]-5-food_generate.y));
+     dist_player_2=Math.sqrt((b[0][0]-5-Food_generate.x)*(b[0][0]-5-Food_generate.x)+(b[0][1]-5-Food_generate.y)*(b[0][1]-5-Food_generate.y));
     if(dist_player_2<=25)
         return 1;
         return 0;
@@ -259,7 +261,7 @@ const_arr_player_2=null;
   static void form_player_2(){
   
                   b=new double[5][2];arr=new double[5][2];const_arr_player_2=new double[5][4];
-                  b[0][0]=0;b[0][1]=matrix6.getInitialHeight();
+                  b[0][0]=0;b[0][1]=Matrix6.getInitialHeight();
                   arr[0][0]=-10;arr[0][1]=b[0][1];
                    const_arr_player_2[0][0]=b[0][0];const_arr_player_2[0][1]=b[0][1];
                    const_arr_player_2[0][2]=const_arr_player_2[0][0]-4;const_arr_player_2[0][3]=const_arr_player_2[0][1];

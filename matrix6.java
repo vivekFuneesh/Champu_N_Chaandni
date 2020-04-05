@@ -1,4 +1,6 @@
 
+
+
 /**********************
   *************************
         @author::Vivek Mangla
@@ -7,7 +9,7 @@
 
 /*******************************************************************
 
-matrix6.java is part of Champu_N_Chaandni.
+Matrix6.java is part of Champu_N_Chaandni.
 
     Champu_N_Chaandni is free Game: you can redistribute it    and/or modify
     it under the terms of the GNU General Public License as published     by
@@ -27,13 +29,13 @@ matrix6.java is part of Champu_N_Chaandni.
 
 
 
-public class matrix6 {
+public class Matrix6 {
     static int foodLimit;
     
     static void create_stage_number(){
         
-        if(matrixSelect.number<6)
-        {matrixSelect.number++;}
+        if(MatrixSelect.number<6)
+        {MatrixSelect.number++;}
                                       }
     
     static void resetSnake(){
@@ -46,34 +48,34 @@ public class matrix6 {
     
     static void resetSnake2(){
     
-    player2.const_arr1_player_2=player2.const_arr_player_2=null;
+    Player2.const_arr1_player_2=Player2.const_arr_player_2=null;
     
-    player_advnc_2.const_arr1_player_2=player_advnc_2.arr1=null;
-    player_advnc_2.const_arr_player_2=player_advnc_2.b=player_advnc_2.arr=player_advnc_2.b1=null;    
+    Player_Advnc_2.const_arr1_player_2=Player_Advnc_2.arr1=null;
+    Player_Advnc_2.const_arr_player_2=Player_Advnc_2.b=Player_Advnc_2.arr=Player_Advnc_2.b1=null;    
     
-    if(GUI.Classic.isSelected()){player2.form_player_2();}
-    else player_advnc_2.form_player_2();
+    if(GUI.Classic.isSelected()){Player2.form_player_2();}
+    else Player_Advnc_2.form_player_2();
     
-    player_advnc_2.turn_b_player_2=1;
+    Player_Advnc_2.turn_b_player_2=1;
     
                              }
     
     static int getFoodLimit(){
     
-        if(matrixSelect.number==1){return 25; }
-        else if(matrixSelect.number==2){return 25; }
-        else if(matrixSelect.number==3){return 25; }
-        else if(matrixSelect.number==4){return 20; }
-        else if(matrixSelect.number==5){return 20; }
+        if(MatrixSelect.number==1){return 25; }
+        else if(MatrixSelect.number==2){return 25; }
+        else if(MatrixSelect.number==3){return 25; }
+        else if(MatrixSelect.number==4){return 20; }
+        else if(MatrixSelect.number==5){return 20; }
         return -1;
                               }
     
     static int getInitialHeight(){
-        if(matrixSelect.number==1){return 50; }
-        else if(matrixSelect.number==2){return 20; }
-        else if(matrixSelect.number==3){return matrix3.block_height; }
-        else if(matrixSelect.number==4){return matrix4.block_height/2; }
-        else if(matrixSelect.number==5){return matrix4.block_height/2; }
+        if(MatrixSelect.number==1){return 50; }
+        else if(MatrixSelect.number==2){return 20; }
+        else if(MatrixSelect.number==3){return Matrix3.block_height; }
+        else if(MatrixSelect.number==4){return Matrix4.block_height/2; }
+        else if(MatrixSelect.number==5){return Matrix4.block_height/2; }
         return -1;
         
                                   }

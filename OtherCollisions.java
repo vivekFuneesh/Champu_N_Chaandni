@@ -1,10 +1,12 @@
 
 
+
+
 /**********************
-  *************************
+ *************************
         @author::Vivek Mangla
-**************************
-*****************************/
+ **************************
+ *****************************/
 
 /*******************************************************************
 
@@ -23,79 +25,79 @@ OtherCollisions.java is part of Champu_N_Chaandni.
     You should have received a copy of the GNU General Public License
     along with Champu_N_Chaandni.  If not, see <http://www.gnu.org/licenses/>.
 
-*******************************************************************
-*/
+ *******************************************************************
+ */
 
 
 
 public class OtherCollisions {
-    
-    
-    
-       static void check_for_walls(double b[][]){
-           
-       if(GUI.UNWALLED.isSelected()){
-                       Main.MOVE_OTHER_SIDE();
-                      
-                             }
-           
-           else{
-           if((b[0][0]>Main.pWidth-10)||(b[0][0]<0)||(b[0][1]>Main.pHeight-10)||(b[0][1]<0))
-           {
-               
-            Main.player_1OUT=1;
-           }
-               }
-                
 
-    }
-   
-       static void check_for_walls_advnc(){
-       if(GUI.UNWALLED.isSelected()){
-                              player_advnc_2.move_other_side_2();
-                                 }
-       
-       else  if((player_advnc_2.b[0][0]>Main.pWidth-10)||(player_advnc_2.b[0][0]<0)||(player_advnc_2.b[0][1]>Main.pHeight-10)||(player_advnc_2.b[0][1]<0))
-           {
-               
-               Main.player_2OUT=1;
-            }
-   
-                               }
 
-    
-       static void check_for_walls_basic(double const_arr[][]){
-                   if(GUI.UNWALLED.isSelected()){
-                    
-                        Main.MOVE_OTHER_SIDE_BASIC();
-                        
-                                  }
-                    else{                   
-           if((const_arr[0][0]>Main.pWidth-10)||(const_arr[0][0]<0)||(const_arr[0][1]>Main.pHeight-10)||(const_arr[0][1]<0))
-           {
-               
-               Main.player_1OUT=1;//System.out.println(" Out Inside check_for_walls_basic ");
-           
-           } 
-           
-                         }
-                    
-    }
-    
-       static void check_for_walls_2_basic(){
-           
-    if(GUI.UNWALLED.isSelected()){player2.move_other_side_2();}
-    
-    else if((player2.const_arr_player_2[0][0]>Main.pWidth-10)||(player2.const_arr_player_2[0][0]<0)||(player2.const_arr_player_2[0][1]>Main.pHeight-10)||(player2.const_arr_player_2[0][1]<0))
-           {
-               Main.player_2OUT=1;
-                   
-           }
-    
-    
-    }
-   
-    
-    
-    
+
+	static void check_for_walls(double b[][]){
+
+		if(GUI.UNWALLED.isSelected()){
+			Main.MOVE_OTHER_SIDE();
+
+		}
+
+		else{
+			if((b[0][0]>Main.pWidth-10)||(b[0][0]<0)||(b[0][1]>Main.pHeight-10)||(b[0][1]<0))
+			{
+
+				Main.player_1OUT=1;
+			}
+		}
+
+
+	}
+
+	static void check_for_walls_advnc(){
+		if(GUI.UNWALLED.isSelected()){
+			Player_Advnc_2.move_other_side_2();
+		}
+
+		else  if((Player_Advnc_2.b[0][0]>Main.pWidth-10)||(Player_Advnc_2.b[0][0]<0)||(Player_Advnc_2.b[0][1]>Main.pHeight-10)||(Player_Advnc_2.b[0][1]<0))
+		{
+
+			Main.player_2OUT=1;
+		}
+
+	}
+
+
+	static void check_for_walls_basic(double const_arr[][]){
+		if(GUI.UNWALLED.isSelected()){
+
+			Main.MOVE_OTHER_SIDE_BASIC();
+
+		}
+		else{                   
+			if((const_arr[0][0]>Main.pWidth-10)||(const_arr[0][0]<0)||(const_arr[0][1]>Main.pHeight-10)||(const_arr[0][1]<0))
+			{
+
+				Main.player_1OUT=1;//System.out.println(" Out Inside check_for_walls_basic ");
+
+			} 
+
+		}
+
+	}
+
+	static void check_for_walls_2_basic(){
+
+		if(GUI.UNWALLED.isSelected()){Player2.move_other_side_2();}
+
+		else if((Player2.const_arr_player_2[0][0]>Main.pWidth-10)||(Player2.const_arr_player_2[0][0]<0)||(Player2.const_arr_player_2[0][1]>Main.pHeight-10)||(Player2.const_arr_player_2[0][1]<0))
+		{
+			Main.player_2OUT=1;
+
+		}
+
+
+	}
+
+
+
+
 }

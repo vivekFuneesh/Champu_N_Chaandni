@@ -1,5 +1,3 @@
-
-
 /**********************
   *************************
         @author::Vivek Mangla
@@ -8,7 +6,7 @@
 
 /*******************************************************************
 
-matrix3.java is part of Champu_N_Chaandni.
+Matrix3.java is part of Champu_N_Chaandni.
 
     Champu_N_Chaandni is free Game: you can redistribute it    and/or modify
     it under the terms of the GNU General Public License as published     by
@@ -36,7 +34,7 @@ import java.util.Random;
  *
  * @author vivek
  */
-public class matrix3 {
+public class Matrix3 {
     
     
     

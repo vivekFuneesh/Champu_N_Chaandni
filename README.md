@@ -1,9 +1,9 @@
 
 Champu_N_Chaandni is a PC Game in which  worms size increase on eating food. 
 
-    Copyright (C) 2014  Vivek Mangla GNU/GPLV3
+    Copyright (C) 2014  Vivek Mangla
 
-    Champu_N_Chaandni is free Game: you can redistribute it and/or modify
+ Champu_N_Chaandni is free Game: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -26,11 +26,9 @@ A MultiPlayer Portable Computer Worm Game.
 
 A maximum of 2 Players can play on same Keyboard.
 
-6 different Levels, 2 types of Chaandni's Poses.
+6 different Levels, 2 types of Chaandni's Pos.
 
-Download executables(1 click play) in formats of .exe, .dmg, .sh from sourceforge.net/u/vivekfuneesh
-
-Download source code from here.
+Download source code.
 
 Extract it and move inside directory on cmd.
 
