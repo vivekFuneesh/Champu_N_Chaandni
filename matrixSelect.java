@@ -1,4 +1,6 @@
 
+
+
 /**********************
   *************************
         @author::Vivek Mangla
@@ -7,7 +9,7 @@
 
 /*******************************************************************
 
-matrixSelect.java is part of Champu_N_Chaandni.
+MatrixSelect.java is part of Champu_N_Chaandni.
 
     Champu_N_Chaandni is free Game: you can redistribute it    and/or modify
     it under the terms of the GNU General Public License as published     by
@@ -33,7 +35,7 @@ import java.awt.Graphics2D;
  *
  * @author vivek
  */
-public class matrixSelect {
+public class MatrixSelect {
     
     static int number=0;
     
@@ -52,36 +54,36 @@ public class matrixSelect {
         
         
         if(number==2){
-              if(Main.player_1OUT!=1)matrix2.pipe_bite(arr1);
-              if(GUI.Multi_Player.isSelected()){if(Main.player_2OUT!=1)matrix2.pipe_bite_advnc(arr2);}
+              if(Main.player_1OUT!=1)Matrix2.pipe_bite(arr1);
+              if(GUI.Multi_Player.isSelected()){if(Main.player_2OUT!=1)Matrix2.pipe_bite_advnc(arr2);}
                   }
         
         else if(number==3){
-            if(Main.player_1OUT!=1){matrix3.collision_Detector(arr1[0][0],arr1[0][1]);}
-            if(GUI.Multi_Player.isSelected()){if(Main.player_2OUT!=1){matrix3.collision_Detector2(arr2[0][0],arr2[0][1]);}}
+            if(Main.player_1OUT!=1){Matrix3.collision_Detector(arr1[0][0],arr1[0][1]);}
+            if(GUI.Multi_Player.isSelected()){if(Main.player_2OUT!=1){Matrix3.collision_Detector2(arr2[0][0],arr2[0][1]);}}
                           }
         
         else if(number==4){
             
-            matrix4.move_matrix();
+            Matrix4.move_matrix();
           
             if(Main.player_1OUT!=1){
                 for(int i=0;i<arr1.length;i++)
                  {   
-                    if(i==arr1.length-1){matrix4.collisionDetector(arr1[i][0],arr1[i][1],16);}
-                    else if(i==arr1.length-2){matrix4.collisionDetector(arr1[i][0],arr1[i][1],17);}    
-                    else if(i==arr1.length-3){matrix4.collisionDetector(arr1[i][0],arr1[i][1],18);}
-                    else {matrix4.collisionDetector(arr1[i][0],arr1[i][1],20);}
+                    if(i==arr1.length-1){Matrix4.collisionDetector(arr1[i][0],arr1[i][1],16);}
+                    else if(i==arr1.length-2){Matrix4.collisionDetector(arr1[i][0],arr1[i][1],17);}    
+                    else if(i==arr1.length-3){Matrix4.collisionDetector(arr1[i][0],arr1[i][1],18);}
+                    else {Matrix4.collisionDetector(arr1[i][0],arr1[i][1],20);}
                 }
                                    }
             
             if(GUI.Multi_Player.isSelected()){
                   if(Main.player_2OUT!=1){
                       for(int i=0;i<arr2.length;i++)
-                {   if(i==arr2.length-1)matrix4.collisionDetector2(arr2[i][0],arr2[i][1],16);
-                    else if(i==arr2.length-2)matrix4.collisionDetector2(arr2[i][0],arr2[i][1],17);    
-                    else if(i==arr2.length-3)matrix4.collisionDetector2(arr2[i][0],arr2[i][1],18);
-                    else matrix4.collisionDetector2(arr2[i][0],arr2[i][1],20);
+                {   if(i==arr2.length-1)Matrix4.collisionDetector2(arr2[i][0],arr2[i][1],16);
+                    else if(i==arr2.length-2)Matrix4.collisionDetector2(arr2[i][0],arr2[i][1],17);    
+                    else if(i==arr2.length-3)Matrix4.collisionDetector2(arr2[i][0],arr2[i][1],18);
+                    else Matrix4.collisionDetector2(arr2[i][0],arr2[i][1],20);
                 }                    }
                                               }
                            
@@ -89,28 +91,28 @@ public class matrixSelect {
         else if(number==5){
         
         
-            matrix5.move_matrix();
+            Matrix5.move_matrix();
           
             if(Main.player_1OUT!=1){
                 for(int i=0;i<arr1.length;i++)
                 {   
-                    if(i==arr1.length-1){matrix5.collisionDetector(arr1[i][0],arr1[i][1],16);}
+                    if(i==arr1.length-1){Matrix5.collisionDetector(arr1[i][0],arr1[i][1],16);}
                     
-                    else if(i==arr1.length-2){matrix5.collisionDetector(arr1[i][0],arr1[i][1],17);}    
+                    else if(i==arr1.length-2){Matrix5.collisionDetector(arr1[i][0],arr1[i][1],17);}    
                     
-                    else if(i==arr1.length-3){matrix5.collisionDetector(arr1[i][0],arr1[i][1],18);}
+                    else if(i==arr1.length-3){Matrix5.collisionDetector(arr1[i][0],arr1[i][1],18);}
                     
-                    else {matrix5.collisionDetector(arr1[i][0],arr1[i][1],20);}
+                    else {Matrix5.collisionDetector(arr1[i][0],arr1[i][1],20);}
                 }
                                    }
             
             if(GUI.Multi_Player.isSelected()){
                   if(Main.player_2OUT!=1){
                       for(int i=0;i<arr2.length;i++)
-                {   if(i==arr2.length-1)matrix5.collisionDetector2(arr2[i][0],arr2[i][1],16);
-                    else if(i==arr2.length-2)matrix5.collisionDetector2(arr2[i][0],arr2[i][1],17);    
-                    else if(i==arr2.length-3)matrix5.collisionDetector2(arr2[i][0],arr2[i][1],18);
-                    else matrix5.collisionDetector2(arr2[i][0],arr2[i][1],20);
+                {   if(i==arr2.length-1)Matrix5.collisionDetector2(arr2[i][0],arr2[i][1],16);
+                    else if(i==arr2.length-2)Matrix5.collisionDetector2(arr2[i][0],arr2[i][1],17);    
+                    else if(i==arr2.length-3)Matrix5.collisionDetector2(arr2[i][0],arr2[i][1],18);
+                    else Matrix5.collisionDetector2(arr2[i][0],arr2[i][1],20);
                 }                    }
                                               }
                            
@@ -124,11 +126,11 @@ public class matrixSelect {
     
     static void matrix_paint(Graphics2D g2d){
         
-        if(number==2){matrix2.show_matrix(g2d);}
-        else if(number==3){matrix3.drawObstacle(g2d);}
-        else if(number==4){matrix4.drawObstacle(g2d);
+        if(number==2){Matrix2.show_matrix(g2d);}
+        else if(number==3){Matrix3.drawObstacle(g2d);}
+        else if(number==4){Matrix4.drawObstacle(g2d);
         }
-        else if(number==5){matrix5.drawObstacle(g2d);
+        else if(number==5){Matrix5.drawObstacle(g2d);
         }
         else if(number==6){}
         else if(number==7){}

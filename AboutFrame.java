@@ -1,4 +1,6 @@
 
+
+
 /**********************
   *************************
         @author::Vivek Mangla
@@ -96,14 +98,14 @@ class AboutPane extends JTabbedPane{
         {
             AbP[i]=new AboutPanel();
             AbP[i].setLayout(new GridLayout(1,2));
-            AbP[i].add(new image(i));
+            AbP[i].add(new Vimage(i));
             AbP[i].add(new JScrollPane(create(i)));
             addTab(getName(i),AbP[i]);
         }
         
          Controls=new AboutPanel();
          Controls.setLayout(new GridLayout(1,2));
-         Controls.add(new image(5));
+         Controls.add(new Vimage(5));
          Controls.add(new JScrollPane(create(5)));
          addTab("Controls",Controls);
         

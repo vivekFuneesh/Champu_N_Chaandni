@@ -1,5 +1,7 @@
 
 
+
+
 /**********************
   *************************
         @author::Vivek Mangla
@@ -8,7 +10,7 @@
 
 /*******************************************************************
 
-matrix5.java is part of Champu_N_Chaandni.
+Matrix5.java is part of Champu_N_Chaandni.
 
     Champu_N_Chaandni is free Game: you can redistribute it    and/or modify
     it under the terms of the GNU General Public License as published     by
@@ -30,7 +32,7 @@ matrix5.java is part of Champu_N_Chaandni.
 import java.awt.Graphics2D;
 import java.awt.geom.Rectangle2D;
 
-public class matrix5 {
+public class Matrix5 {
     
     static int VSL_breadth,VSL_height,block_width,block_height;
  

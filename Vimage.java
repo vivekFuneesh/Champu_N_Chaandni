@@ -1,5 +1,7 @@
 
 
+
+
 /**********************
   *************************
         @author::Vivek Mangla
@@ -8,7 +10,7 @@
 
 /*******************************************************************
 
-image.java is part of Champu_N_Chaandni.
+Vimage.java is part of Champu_N_Chaandni.
 
     Champu_N_Chaandni is free Game: you can redistribute it    and/or modify
     it under the terms of the GNU General Public License as published     by
@@ -38,11 +40,11 @@ import javax.swing.JPanel;
  *
  * @author vivek
  */
-public class image extends JPanel{
+public class Vimage extends JPanel{
     ImageIcon img;
     static String imag;
     static int count=0;
-    image(int index){setBackground(Color.black);
+    Vimage(int index){setBackground(Color.black);
         //--------FULL_SCREEN_WIDTH/2&&FULL_SCREEN_HEIGHT/2
         imag="";
     if(index==0){setLayout(new GridLayout(1,2));add(new Multi(0));}
